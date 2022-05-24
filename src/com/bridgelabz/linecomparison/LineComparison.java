@@ -16,12 +16,16 @@ public class LineComparison {
         double length = Math.sqrt((x2-x1) * (x2-x1) + (y2-y1) +(y2-y1));
         return length;
     }
+    public static void ComparisonOfLines(Double lengthOfLine1,Double lengthOfLine2) {
 
-    public static void checkEquality(Double lengthOfLine1,Double lengthOfLine2) {
-
-        if(lengthOfLine1.equals(lengthOfLine2))
-            System.out.println("Length of Lines are equal");
-        else
-            System.out.println("Length are not equal");
+        if(lengthOfLine1.compareTo(lengthOfLine2) > 0) {
+            System.out.println("Line1 is greater then from Line2");
+        }
+        else if(lengthOfLine1.compareTo(lengthOfLine2) < 0) {
+            System.out.println("Line1 is lesser then from line2");
+        }
+        else {
+            System.out.println("Length of Line1 and Line2 are equals");
+        }
     }
 }
