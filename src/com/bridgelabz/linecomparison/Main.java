@@ -13,5 +13,7 @@ public class Main {
         LineComparison line2 = new LineComparison(32, 36, 38, 39);
         double lengthOfLine2 = line2.lengthOfLine();
         System.out.println("Length of line two = " + lengthOfLine2);
+
+        LineComparison.checkEquality(lengthOfLine1,lengthOfLine2);
     }
 }
